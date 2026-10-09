@@ -1,16 +1,13 @@
 import { getProducts } from "@/api/api";
 import Marquee from "react-fast-marquee";
 
-const formatUnit = (unit: string) => {
-  const units: Record<string, string> = {
-    kg: "কেজি",
-    liter: "লিটার",
-    piece: "টি",
-    dozen: "ডজন",
-    gram: "গ্রাম",
-  };
-  return units[unit] ?? unit;
-};
+// const formatUnit = (unit: string) => {
+//   const units: Record<string, string> = {
+//     kg: "কেজি",
+//     liter: "লিটার",
+//   };
+//   return units[unit] ?? unit;
+// };
 
 const NavMarquee = async () => {
   const getProduct = await getProducts();
@@ -26,7 +23,15 @@ const NavMarquee = async () => {
                   <p>{i.categoryIcon}</p>
                   <p>{i.nameBn}</p>
                   <p>
-                    {i.today} টাকা/ <span>{formatUnit(i.unit)}</span>
+                    {i.today} টাকা/{" "}
+                    <span>
+                      {" "}
+                      {i.unit === "kg"
+                        ? "প্রতি কেজি"
+                        : i.unit === "litre"
+                          ? "প্রতি লিটার"
+                          : "প্রতি পিস"}
+                    </span>
                   </p>
                   <p
                     className={
