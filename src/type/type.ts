@@ -5,6 +5,13 @@ export interface Category {
   icon: string;
 }
 
+type Market = {
+  market: string;
+  division: string;
+  min: number;
+  max: number;
+};
+
 
 export interface Product {
   id: number;
@@ -23,4 +30,6 @@ export interface Product {
     dir: "up" | "down" | "flat";
     pct: number;
   };
+   markets: Market[];
 }
+

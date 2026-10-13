@@ -1,14 +1,6 @@
 import { getProducts } from "@/api/api";
 import Marquee from "react-fast-marquee";
 
-// const formatUnit = (unit: string) => {
-//   const units: Record<string, string> = {
-//     kg: "কেজি",
-//     liter: "লিটার",
-//   };
-//   return units[unit] ?? unit;
-// };
-
 const NavMarquee = async () => {
   const getProduct = await getProducts();
 
