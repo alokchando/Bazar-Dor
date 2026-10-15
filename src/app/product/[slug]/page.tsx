@@ -1,4 +1,4 @@
-import { getProduct } from "@/api/api";
+import { getProduct } from "@/app/api/api";
 import Link from "next/link";
 
 type Props = {

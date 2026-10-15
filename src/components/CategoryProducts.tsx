@@ -22,7 +22,6 @@ export default function CategoryProducts({ products }: Props) {
   return (
     <>
       <div className="mb-6 flex items-center justify-end gap-3">
-
         <label className="flex items-center gap-2">
           <span className="text-sm">সাজান:</span>
 

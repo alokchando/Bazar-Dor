@@ -1,4 +1,4 @@
-import { getCategories } from "@/api/api";
+import { getCategories } from "@/app/api/api";
 import Link from "next/link";
 
 const NavCategories = async () => {

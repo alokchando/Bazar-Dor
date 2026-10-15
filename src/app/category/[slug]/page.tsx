@@ -1,4 +1,4 @@
-import { getCategory } from "@/api/api";
+import { getCategory } from "@/app/api/api";
 import CategoryProducts from "@/components/CategoryProducts";
 
 type Props = {
