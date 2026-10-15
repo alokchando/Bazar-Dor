@@ -65,7 +65,7 @@ const Page = () => {
             )}
 
             <div className="min-w-0 flex-1">
-              <h2 className="break-words text-xl font-bold text-neutral-900">
+              <h2 className="wrap-break-word text-xl font-bold text-neutral-900">
                 {user?.name}
               </h2>
               <p className="mt-2 break-all text-sm text-neutral-500">
