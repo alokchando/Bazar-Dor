@@ -28,7 +28,7 @@ const Hero = () => {
 
             <div className="flex flex-wrap items-center gap-4 pt-2">
               <Link
-                href="/products"
+                href="#products"
                 className="btn btn-success btn-lg rounded-xl px-7 text-success-content shadow-lg shadow-success/20"
               >
                 সব পণ্য দেখুন
@@ -40,7 +40,7 @@ const Hero = () => {
             <div className="absolute inset-6 rounded-full bg-success/10 blur-3xl" />
 
             <Image
-              src="/bazar-Hero.png"
+              src="/bazar-hero.png"
               alt="তাজা শাকসবজি ও নিত্যপ্রয়োজনীয় বাজারসামগ্রী"
               width={600}
               height={500}
